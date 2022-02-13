@@ -1,3 +1,5 @@
+
+```
 def twoSum(self, nums, target):
         """
         :type nums: List[int]
@@ -12,3 +14,4 @@ def twoSum(self, nums, target):
                     ans = [a,b]
                     return ans
         return ans
+```
