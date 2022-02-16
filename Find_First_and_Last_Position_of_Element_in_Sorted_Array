@@ -14,3 +14,4 @@ class Solution(object):
         b = len(nums)-1-nums.index(target)
         return[a,b]
 ```
+
