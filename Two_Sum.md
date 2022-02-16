@@ -15,4 +15,7 @@ class Solution(object):
                     ans = [a,b]
                     return ans
         return ans
+        
+        # Runtime = 51%
+        # Memory Usage = 48%
 ```
