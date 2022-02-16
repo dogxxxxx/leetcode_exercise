@@ -13,5 +13,8 @@ class Solution(object):
         nums.sort(reverse=True)
         b = len(nums)-1-nums.index(target)
         return[a,b]
+        
+        # Runtime = 55%
+        # Memory Usage = 34%
 ```
 
