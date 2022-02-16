@@ -8,5 +8,8 @@ class Solution(object):
         a = (dict([[x,nums.count(x)] for x in set(nums)]))
         for i in a.items():
             if i[1] > len(nums)/2:
-                return i[0]                             
+                return i[0] 
+             
+        # Runtime = 94%
+        # Memory Usage = 29%
 ```
