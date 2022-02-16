@@ -13,5 +13,4 @@ class Solution(object):
         while target not in nums:
             target = target + 1
         return nums.index(target)
-        ## to be improved
 ```
