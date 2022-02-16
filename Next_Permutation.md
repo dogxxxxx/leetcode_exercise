@@ -25,4 +25,7 @@ class Solution(object):
         # sort nums[b] to nums[len(nums)]
         nums[b+1:] = sorted(nums[b+1:])
         return nums
+
+        # Runtime = 72%
+        # Memory Usage = 72%
 ```
