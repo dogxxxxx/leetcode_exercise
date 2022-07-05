@@ -11,6 +11,20 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[int]
         """
+        # two similar solutions
+        if root == None:
+            return []
+        output = [root]
+        while not all(isinstance(x, int) for x in output):
+            for i in output:
+                if i != None and type(i)!=int:
+                    index = output.index(i)
+                    output[index] = i.val
+                    output.insert(index, i.left)
+                    output.insert(index+2, i.right)
+                    output = [x for x in output if x != None]
+        return output
+
         if root == None:
             return []
         output = [root]
@@ -21,5 +35,5 @@ class Solution(object):
                     output.insert(i+2, output[i+1].right)
                     output[i+1] = output[i+1].val
                     output = [x for x in output if x != None]
-        return output  
+        return output    
 ```        
